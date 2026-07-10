@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 3px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 60px;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.score-value {
+    color: #00ff88;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+#pongCanvas {
+    display: block;
+    background: #000;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+.instructions {
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 30px;
+    font-size: 0.9em;
+    line-height: 1.8;
+}
+
+.instructions p {
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .scoreboard {
+        gap: 20px;
+    }
+
+    .score {
+        padding: 15px 25px;
+    }
+
+    .score-value {
+        font-size: 2em;
+    }
+
+    #pongCanvas {
+        width: 100%;
+        height: auto;
+    }
+
+    .instructions {
+        font-size: 0.8em;
+    }
+}
